@@ -95,7 +95,8 @@ print(alarm_model)
 G=nx.DiGraph()
 
 nodes=['Burglary','Earthquake','JohnCalls','MaryCalls']
-edges=[('Burglary','Alarm'),('Earthquake','Alarm'),('Alarm','JohnCalls'),('Alarm','MaryCalls')]
+edges=[('Burglary','Alarm'),('Earthquake','Alarm'),
+      ('Alarm','JohnCalls'),('Alarm','MaryCalls')]
 
 G.add_nodes_from(nodes)
 G.add_edges_from(edges)
