@@ -1,6 +1,6 @@
 <H3>NAME: SHYAM S</H3>
-<H3>REG NO:212223240156</H3>
-<H3>Experiment 3</H3>
+<H3>REG NO: 212223240156</H3>
+<H3>Ex.No:3</H3>
 <H3>DATE:</H3>
 <H1 ALIGN =CENTER> Implementation of Approximate Inference in Bayesian Networks
 </H1>
@@ -95,8 +95,7 @@ print(alarm_model)
 G=nx.DiGraph()
 
 nodes=['Burglary','Earthquake','JohnCalls','MaryCalls']
-edges=[('Burglary','Alarm'),('Earthquake','Alarm'),
-      ('Alarm','JohnCalls'),('Alarm','MaryCalls')]
+edges=[('Burglary','Alarm'),('Earthquake','Alarm'),('Alarm','JohnCalls'),('Alarm','MaryCalls')]
 
 G.add_nodes_from(nodes)
 G.add_edges_from(edges)
@@ -109,8 +108,8 @@ pos={
     'MaryCalls':(2,-4)
     }
 
-nx.draw(G,pos,with_labels=True,node_size=1500,node_color="skyblue",
-               =10,font_weight="bold",arrowsize=20)
+nx.draw(G,pos,with_labels=True,node_size=1500,node_color="skyblue",font_size=10,
+                     font_weight="bold",arrowsize=20)
 plt.title("Bayesian Network: Burglar Alarm Problem")
 plt.show()
 
